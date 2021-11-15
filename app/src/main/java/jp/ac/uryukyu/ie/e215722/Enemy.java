@@ -64,7 +64,7 @@ public class Enemy {
 
     /**
      * 敵の生死状態を設定する
-     * @param dead 敵の生死状態 
+     * @param dead 敵の生死状態 ture=死亡
      */
     public void setDead(boolean dead){
         this.dead = dead;

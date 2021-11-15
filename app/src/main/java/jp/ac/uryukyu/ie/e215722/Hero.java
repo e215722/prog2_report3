@@ -15,7 +15,7 @@ public class Hero {
     private boolean dead;
 
     /**
-     * nameを設定する
+     * nameを設定するメソッド
      * @param name 敵の名前
      */
     public void setName(String name){
@@ -23,7 +23,7 @@ public class Hero {
     }
 
     /** 
-     * nameを取得する
+     * nameを取得するメソッド
      * @return 敵の名前
      */
     public String getName(){
@@ -31,7 +31,7 @@ public class Hero {
     }
 
     /**
-     * HPを設定する
+     * HPを設定するメソッド
      * @param hitPoint 敵のHP
      */
     public void setHitPoint(int hitpoint){
@@ -39,7 +39,7 @@ public class Hero {
     }
 
     /**
-     * HPを取得する 
+     * HPを取得するメソッド 
      * @return 敵の名前
      */
     public int getHitPoint(){
@@ -47,7 +47,7 @@ public class Hero {
     }
 
     /**
-     * 敵の攻撃力を設定する
+     * 敵の攻撃力を設定するメソッド
      * @param attack
      */
     public void setAttack(int attack){
@@ -55,7 +55,7 @@ public class Hero {
     }
 
     /**
-     * 敵の攻撃力を取得する
+     * 敵の攻撃力を取得するメソッド
      * @return 敵の攻撃力
      */
     public int getAttack(){
@@ -63,15 +63,15 @@ public class Hero {
     }
 
     /**
-     * 敵の生死状態を設定する
-     * @param dead 敵の生死状態 
+     * 敵の生死状態を設定するメソッド
+     * @param dead 敵の生死状態 ture=死亡
      */
     public void setDead(boolean dead){
         this.dead = dead;
     } 
 
     /**
-     * 敵の生死状態を取得する
+     * 敵の生死状態を取得するメソッド
      * @return 敵の生死状態
      */
     public boolean getDead(){
