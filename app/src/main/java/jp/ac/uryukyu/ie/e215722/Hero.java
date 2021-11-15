@@ -9,10 +9,75 @@ package jp.ac.uryukyu.ie.e215722;
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
+
+    /**
+     * nameを設定する
+     * @param name 敵の名前
+     */
+    public void setName(String name){
+        this.name = name;
+    }
+
+    /** 
+     * nameを取得する
+     * @return 敵の名前
+     */
+    public String getName(){
+        return this.name;
+    }
+
+    /**
+     * HPを設定する
+     * @param hitPoint 敵のHP
+     */
+    public void setHitPoint(int hitpoint){
+        this.hitPoint = hitpoint;
+    }
+
+    /**
+     * HPを取得する 
+     * @return 敵の名前
+     */
+    public int getHitPoint(){
+        return this.hitPoint;
+    }
+
+    /**
+     * 敵の攻撃力を設定する
+     * @param attack
+     */
+    public void setAttack(int attack){
+        this.attack = attack;
+    }
+
+    /**
+     * 敵の攻撃力を取得する
+     * @return 敵の攻撃力
+     */
+    public int getAttack(){
+        return this.attack;
+    }
+
+    /**
+     * 敵の生死状態を設定する
+     * @param dead 敵の生死状態 
+     */
+    public void setDead(boolean dead){
+        this.dead = dead;
+    } 
+
+    /**
+     * 敵の生死状態を取得する
+     * @return 敵の生死状態
+     */
+    public boolean getDead(){
+        return this.dead;
+    }
+
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -35,7 +100,7 @@ public class Hero {
      */
     public void attack(Enemy e){
         int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.name, damage);
+        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.getName(), damage);
         e.wounded(damage);
     }
 
